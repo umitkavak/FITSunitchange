@@ -37,7 +37,7 @@ hdul.close()
 hdu2 = fits.open(new_fits)
 data_erg = hdu2[1].data  # assume the first extension is an image
 header2 = hdu2[1].header
-print('NEW = ', data_erg[:])
+print('NEW = ', data_erg[:]) 
 
 print('The time you spent (h:mm:ss.s) is :', datetime.now() - startTime)
 print("Good job! At least, you code has worked without any interruption.")
